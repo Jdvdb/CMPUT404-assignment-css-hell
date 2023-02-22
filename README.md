@@ -24,4 +24,13 @@ Changes:
 I removed the default <style> tags within all of the books and replaced them
 with <link rel="stylesheet" href="./books.css"> to use our styling.
 
-No other changes were made.
+Because all of the assets used similar names 'like' cover and are just in the
+'images' directory, I created a new directory for each book's assets and updated
+the html to grab assets from a folder given the same name as the .html file
+
+=================
+The 'good' version of my website was based off of an existing personal website
+I have: https://vandenbruel.ca/
+
+This is a simplified version that meets the project requirements, but it does
+reuse many of the copy and some of the code I used from my personal site.

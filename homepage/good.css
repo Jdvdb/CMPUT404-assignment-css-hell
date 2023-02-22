@@ -1,0 +1,134 @@
+:root {
+    --main-bg-color: #E9E6FF;
+    --text-color: #03313A;
+    --secondary-bg-color: #0BB7DA; 
+    --copy-bg-color: #F6F6F6;
+    --link-color: #141414;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border-radius: 20px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+    font-family: "Arial";
+}
+
+.StyledHero {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+    .StyledHero {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.MainContent {
+    width: 65vw;
+    padding: 1rem;
+}
+
+.HalfDiv {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .HalfDiv {
+        width: 100%;
+    }
+}
+
+.SideBar {
+    position: sticky;
+    width: 20vw;
+    top: 20vh;
+    background-color: var(--secondary-bg-color);
+    height: fit-content;
+    margin: 2rem;
+    margin-top: 10rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+}
+
+.Copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-height: 20rem;
+    background-color: var(--copy-bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin:  8rem 1rem;
+}
+
+.Footer {
+    width: 80vw;
+    padding: 4rem;
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5.2rem;
+    margin-left: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-family: "Arial";
+    margin-left: 0.5rem;
+}
+
+a {
+    color: var(--link-color)
+}
+
+img {
+    height: auto;
+    width: 20em;
+    border-radius: 1rem;
+}

@@ -1,0 +1,130 @@
+:root {
+    --main-bg-color: red;
+    --text-color: blue;
+    --secondary-bg-color: yellow; 
+    --copy-bg-color: green;
+    --link-color: orange;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 40px;
+    background: rgba(71, 88, 46, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border: 6px solid rgba(0, 0, 0, 0);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+    font-family: "Arial";
+    text-shadow: 1px 1px;
+}
+
+.StyledHero {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    .StyledHero {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+.Wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.MainContent {
+    width: 65vw;
+}
+
+.HalfDiv {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .HalfDiv {
+        width: 100%;
+    }
+}
+
+.SideBar {
+    position: sticky;
+    width: 20vw;
+    top: 20vh;
+    background-color: var(--secondary-bg-color);
+    height: fit-content;
+    margin: 2rem;
+    margin-top: 10rem;
+}
+
+.Copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-height: 20rem;
+    background-color: var(--copy-bg-color);
+    margin:  8rem 1rem;
+}
+
+.Footer {
+    width: 80vw;
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5.2rem;
+    margin-left: 3rem;
+    color: red;
+    text-shadow: 2px 2px 4px violet, 0 0 250px indigo, 0 0 75px blue;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-family: "Arial";
+    margin-left: 0.5rem;
+}
+
+a {
+    color: var(--link-color)
+}
+
+img {
+    height: 20em;
+    width: 20em;
+}
+
+div {
+    box-shadow: 5px 5px 30px black;
+}
